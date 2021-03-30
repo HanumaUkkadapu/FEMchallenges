@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly</title>
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body class="flex-cc col" >
+   
+    <header class="flex-cc" >
+        <a href="#" class="flex-cc" id="logo_a" >
+            <img id="logo_img" src="./images/logo.svg" alt="LOGO" >
+        </a>
+        <nav id="nav_el" class="flex-cc" >
+            <ul id="nav_ul" class="flex-cc" >
+                <li class="flex-cc" >
+                    <a href="#" class="flex-cc" >Features</a>
+                </li>
+                <li class="flex-cc" >
+                    <a href="#" class="flex-cc" >Pricing</a>
+                </li>
+                <li class="flex-cc" >
+                    <a href="#" class="flex-cc" >Resources</a>
+                </li>
+                <li class="flex-cc" id="login_li">
+                    <a href="#" class="flex-cc" >Login</a>
+                </li>
+                <li class="flex-cc" id="signup_li" >
+                    <a href="#" class="flex-cc" >Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="menu" class="flex-cc" >
+            <svg width="40" height="32"
+                 viewBox="0 0 100 100" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="0" >
+                    <rect id="rect1" x="8" y="25" width="84" height="10" rx="5" ry="5" />
+                    <rect id="rect2" x="8" y="45" width="84" height="10" rx="5" ry="5" />
+                    <rect id="rect3" x="8" y="65" width="84" height="10" rx="5" ry="5" />
+                </g>
+            </svg>
+        </button>
+    </header>
+
+    <main class="flex-cc col" >
+        <section class="flex-cc" id="landing" >
+            <div id="land_head" class="flex-cc col">
+                <h1 id="land_h1">More than just shorter links</h1>
+                <h2 id="land_h2">Build your brand's recognition and get detaled insights on how your links performing.</h2>
+                <a class="flex-cc land-link" href="#" >Get Started</a>
+            </div>
+            <div id="land_bg" class="flex-cc">
+                <img src="./images/illustration-working.svg" alt="A user working" >
+            </div>
+        </section>
+        <section class="flex-cc col" id="form" >
+            <div id="container">
+                <div id="formWrapper" class="flex-cc">
+                    <form id="formEl" class="flex-cc" action="POST">
+                        <span id="noLinkError" class="flex-cc">Please add a link..!</span>
+                        <input type="text" id="shortIn" placeholder="Shorten a link here..." >
+                        <input type="text" id="shortIn" placeholder="Shorten a link here..." >
+                        <button id="shortenBtn">Shorten It!</button>
+                    </form>
+                </div>
+                <!--<div class="flex-cc linkHistory">
+                    <span>Hello World!</span>
+                    <div class="flex-cc">
+                        <span>Hello World!</span>
+                        <button id="btn_20" class="flex-cc" onclick="copyShortLink(btn_20)">Copy</button>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+        <section class="flex-cc col" id="stats" >
+            <div id="stats_head" class="flex-cc col" >
+                <h1>Advanced Statistics</h1>
+                <p>Track how your links are performing across the web with our advanced stastistics dashboard.</p>
+            </div>
+            <div id="stats_data" class="flex-cc" >
+                <div class="flex-cc col" >
+                    <div class="stats_img">
+                        <img src="./images/icon-brand-recognition.svg" alt="icon-brand-recognition" >
+                    </div>
+                    <h3>Brand recognition</h3>
+                    <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+                <div class="flex-cc col" >
+                    <div class="stats_img">
+                        <img src="./images/icon-detailed-records.svg" alt="icon-detailed-records" >
+                    </div>
+                    <h3>Detailed Records</h3>
+                    <p> Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                </div>
+                <div class="flex-cc col" >
+                    <div class="stats_img">
+                        <img src="./images/icon-fully-customizable.svg" alt="icon-fully-customizable" >
+                    </div>
+                    <h3>Fully Customizable</h3>
+                    <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </section>
+        <section class="flex-cc col" id="land2" >
+            <div class="flex-cc col" >
+                <h1>Boost your links today</h1>
+                <a class="flex-cc land-link" href="#">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex-cc" >
+        <div id="footer_logo_div" class="flex-cc" >
+            <a href="#" >
+                <img src="./images/logo.svg" alt="" >
+            </a>
+        </div>
+        <nav class="flex-cc col" >
+            <h6>Features</h6>
+            <ul class="flex-cc col">
+                <li><a href="#">Link Shortening</a></li>
+                <li><a href="#">Branded Links</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </nav>
+        <nav class="flex-cc col" >
+            <h6>Resources</h6>
+            <ul class="flex-cc col">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <nav class="flex-cc col" >
+            <h6>Company</h6>
+            <ul class="flex-cc col">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="flex-cc" id="social_nav" >
+            <ul class="flex-cc">
+                <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook-icon"></a></li>
+                <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter-icon"></a></li>
+                <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest-icon"></a></li>
+                <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram-icon"></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
